@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 188393378}
   - component: {fileID: 188393377}
   m_Layer: 0
-  m_Name: Ravi Camera
+  m_Name: ' Camera 2'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

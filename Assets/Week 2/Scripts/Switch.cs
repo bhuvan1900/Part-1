@@ -19,7 +19,7 @@ public class Switch : MonoBehaviour
         Debug.Log("Trigger from- " + collision.gameObject);
         spriteRenderer.color = Color.red;
         //gameObject.SetActive(false);
-        //spriteRenderer.enabled = false;
+        //spriteRenderer.enabled = false; 
 
     }
 
