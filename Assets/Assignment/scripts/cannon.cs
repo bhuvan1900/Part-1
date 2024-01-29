@@ -7,6 +7,8 @@ public class cannon : MonoBehaviour
     //public speed float to tweak in unity
     public float cannonSpeed;
    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +23,6 @@ public class cannon : MonoBehaviour
 
         //make it move only in y-axis
         transform.Translate(0, direction * cannonSpeed * Time.deltaTime, 0);
+
+        }
     }
-}
