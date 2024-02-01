@@ -6,7 +6,9 @@ public class cannon : MonoBehaviour
 {
     //public speed float to tweak in unity
     public float cannonSpeed;
-   
+
+    public GameObject cakefab;
+    public Transform cakePoint;
 
 
     // Start is called before the first frame update
@@ -25,4 +27,12 @@ public class cannon : MonoBehaviour
         transform.Translate(0, direction * cannonSpeed * Time.deltaTime, 0);
 
         }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        //make missile appear
+        Instantiate(cakefab, cakePoint.position, cakePoint.rotation);
+
     }
+}
