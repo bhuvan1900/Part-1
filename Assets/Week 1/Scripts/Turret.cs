@@ -17,7 +17,7 @@ public class Turret : MonoBehaviour
     {
         float keyboardInput = Input.GetAxis("Vertical");
         
-        if (Input.GetKeyDown(KeyCode.V)) ;
+        //if (Input.GetKeyDown(KeyCode.V)) ;
         {
             transform.Rotate(keyboardInput * speed3 * Time.deltaTime * Vector3.forward, 1);
         }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class cake : MonoBehaviour
 {
     public GameObject cakefab;
-    public Vector2 cakeSpeed = new Vector2(10, 0);
     Rigidbody2D cakebody;
 
     // Start is called before the first frame update
@@ -22,11 +21,6 @@ public class cake : MonoBehaviour
        
 
 
-    }
-
-    private void FixedUpdate()
-    {
-        cakebody.MovePosition(cakebody.position + cakeSpeed * Time.deltaTime);
     }
 
 

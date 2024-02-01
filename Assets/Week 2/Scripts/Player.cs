@@ -5,11 +5,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     Vector2 direction;
-    public Rigidbody2D rigidbody;
+    public Rigidbody2D rigidbody2;
     public float force = 150f;
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rigidbody2 = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody.AddForce(direction * force * Time.deltaTime);
+        rigidbody2.AddForce(direction * force * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

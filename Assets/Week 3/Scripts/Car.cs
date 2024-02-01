@@ -8,10 +8,10 @@ public class Car : MonoBehaviour
     float steering;
     public float forwardSpeed = 500;
     public float steeringSpeed = 200;
-    Rigidbody2D rigidbody;
+    Rigidbody2D rigidbody2;
     void Start()
     {
-        rigidbody= GetComponent<Rigidbody2D>();
+        rigidbody2= GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -23,8 +23,8 @@ public class Car : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody.AddTorque(steering * -steeringSpeed * Time.deltaTime);
+        rigidbody2.AddTorque(steering * -steeringSpeed * Time.deltaTime);
         Vector2 force = transform.up* acceleration* forwardSpeed*Time.deltaTime;
-        rigidbody.AddForce(force);
+        rigidbody2.AddForce(force);
     }
 }
